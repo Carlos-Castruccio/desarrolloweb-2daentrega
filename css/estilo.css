@@ -150,8 +150,10 @@ h3::selection{
     height: 500px;
 }
 .calesita {
-    display: block;
-   margin-left: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .whatsapp {
@@ -184,8 +186,19 @@ footer i {
 footer i:hover {
     color: rgb(150, 22, 22);
 }
+@media(max-width:473px) {
+    header h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
 
-
+}
+@media(max-width:469px) {
+    .calesita {
+    width: 349px;
+    height: 349px;
+}
+}
 /***-----mainmotos-----***/
 
 
@@ -287,6 +300,12 @@ footer i:hover {
     }
 }
 
+@media(max-width:469px) {
+    .calesita {
+    width: 349px;
+    height: 349px;
+}
+}
 /***-----sección cascos----***/
 
 
