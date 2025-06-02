@@ -167,7 +167,7 @@ h3::selection{
     height: 50px;
 }
 
-/***--------Footer--------!*/
+/*--------Footer--------*/
 
 footer {
     background-color: gainsboro;
@@ -199,7 +199,7 @@ footer i:hover {
     height: 349px;
 }
 }
-/***-----mainmotos-----***/
+/*-----mainmotos-----*/
 
 
 .ofrecemos h2 {
@@ -306,7 +306,7 @@ footer i:hover {
     height: 349px;
 }
 }
-/***-----sección cascos----***/
+/*-----sección cascos----*/
 
 
 
@@ -374,7 +374,7 @@ footer i:hover {
     }
 }
 
-/***----seccion camperas----***/
+/*----seccion camperas----*/
 
 .presentacion-camperas h2 {
     background-color: red;
