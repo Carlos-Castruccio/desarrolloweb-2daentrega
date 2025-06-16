@@ -34,7 +34,13 @@
             color:$color-principal;
             text-align: center;
             }
-
+        h2:hover{
+            background: linear-gradient(to right, red, blue);
+            background-clip: text;
+            font-size: 50px;
+            color: transparent;
+            transition-duration: 2s;
+        }
         }
         h3{
             font-size: 20px;
@@ -48,7 +54,8 @@
     img{
         width: 600px;
         height: 500px;
-    }
+        }
+        
 }
 
 
@@ -300,4 +307,16 @@
         border-radius: 5px;
         background-color: #f8f9fa;
 }
+
+}
+.fondo-gradiente {
+    background: linear-gradient(90deg, skyblue, rgb(74, 74, 148));
+    background-size: 200% 200%;
+    animation: 4s gradient infinite;
+}
+
+@keyframes gradient {
+    0% { background-position:  0 50%; }
+    50% { background-position: 100% 50%;}
+    100% { background-position: 0 50%;}
 }

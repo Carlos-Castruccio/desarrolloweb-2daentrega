@@ -94,6 +94,13 @@ header .boton:hover {
   color: black;
   text-align: center;
 }
+.hero2 div h2:hover {
+  background: linear-gradient(to right, red, blue);
+  background-clip: text;
+  font-size: 50px;
+  color: transparent;
+  transition-duration: 2s;
+}
 .hero2 h3 {
   font-size: 20px;
   color: black;
@@ -331,6 +338,23 @@ header .boton:hover {
   background-color: #f8f9fa;
 }
 
+.fondo-gradiente {
+  background: linear-gradient(90deg, skyblue, rgb(74, 74, 148));
+  background-size: 200% 200%;
+  animation: 4s gradient infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
 @media (max-width: 430px) {
   header nav div a h1 {
     font-size: 50px;
