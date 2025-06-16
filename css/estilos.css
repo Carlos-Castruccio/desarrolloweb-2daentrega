@@ -326,6 +326,9 @@ header .boton:hover {
 .seccion-camperas .camperas-item h3 {
   color: white;
   font-size: 20px;
+  transition-duration: 2s;
+  transition-property: width;
+  transition-timing-function: linear;
 }
 .seccion-camperas .camperas-item h4 {
   position: top;

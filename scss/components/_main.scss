@@ -289,6 +289,9 @@
         h3{
             color: white;
             font-size: 20px;
+            transition-duration: 2s;
+            transition-property: width;
+            transition-timing-function: linear;
         }
         h4{
             position: top;
@@ -296,6 +299,7 @@
             color:white;
             margin-bottom: 20px;
             margin-top: 5px;
+            
         }
         a{
             background-color:black;
