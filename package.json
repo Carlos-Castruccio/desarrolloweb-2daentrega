@@ -1,0 +1,19 @@
+{
+  "name": "preentrega2castruccio",
+  "version": "1.0.0",
+  "description": "<h3 align=\"center\">2da. Entrega</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carlos-Castruccio/desarrolloweb-2daentrega.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carlos-Castruccio/desarrolloweb-2daentrega/issues"
+  },
+  "homepage": "https://github.com/Carlos-Castruccio/desarrolloweb-2daentrega#readme"
+}

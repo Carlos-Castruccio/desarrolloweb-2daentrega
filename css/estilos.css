@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.seccion-cascos .cascos-item a, .section-motos .motos-item a {
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px;
+  color: yellow;
+}
+
+/*reset de css*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  background-color: gainsboro;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer a i {
+  font-size: 50px;
+  color: blue;
+  transition: 0.5s;
+}
+
+header {
+  background-color: black;
+}
+header h1 {
+  font-size: 60px;
+  font-weight: 900;
+  color: white;
+}
+header nav ul {
+  background-color: black !important;
+}
+header nav ul li a {
+  color: white !important;
+}
+header nav ul li a:hover {
+  background-color: black !important;
+}
+header .boton {
+  border: 1px solid rgb(170, 40, 40);
+  color: white;
+}
+header .boton:hover {
+  background-color: rgb(170, 40, 40);
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  height: 670px;
+  background-image: url(../img/moto-8.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.hero h2 {
+  color: white;
+  font-size: 30px;
+}
+.hero h2::first-letter {
+  font: size 40px;
+  color: red;
+}
+.hero p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.hero2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 15px;
+}
+.hero2 div {
+  width: 35%;
+}
+.hero2 div h2 {
+  font-size: 35px;
+  color: black;
+  text-align: center;
+}
+.hero2 h3 {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+.hero2 h3::selection {
+  background-color: rgb(170, 40, 40);
+  color: white;
+}
+.hero2 img {
+  width: 600px;
+  height: 500px;
+}
+
+.novedades h2 {
+  background-color: rgb(29, 27, 27);
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.novedades .novedades-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.novedades .novedades-container div {
+  border: 2px solid black;
+  width: 260px;
+  height: 350px;
+  margin: 20px;
+  text-align: center;
+}
+.novedades .novedades-container div:nth-child(3) {
+  border-color: red;
+}
+.novedades .novedades-container div img {
+  width: 100%;
+  height: 80%;
+}
+.novedades .novedades-container div p {
+  font-size: 15px;
+  color: black;
+  background-color: gray;
+  margin-bottom: 5px;
+}
+.novedades .novedades-container div a {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  padding: 5px 5px 5px 5px;
+}
+
+.calesita {
+  width: 500px;
+  height: 500px;
+}
+
+.calesita {
+  display: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 80px;
+  right: 25px;
+}
+.whatsapp a img {
+  width: 60px;
+  height: 50px;
+}
+
+.ofrecemos h2 {
+  background-color: red;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.motos h3 {
+  background-color: white;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+.section-motos {
+  background-image: url(../img/Imagenes-motos/Fondo-moto2.jpg);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.section-motos .motos-item {
+  width: 250px;
+  height: 400px;
+  margin: 20px;
+  text-align: center;
+}
+.section-motos .motos-item img {
+  width: 100%;
+  height: 250px;
+}
+.section-motos .motos-item h3 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.section-motos .motos-item h4 {
+  position: top;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+.section-motos .motos-item a {
+  background-color: rgb(15, 14, 14);
+}
+
+.presentacion-cascos h2 {
+  background-color: red;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.presentacion-cascos p {
+  text-align: center;
+  color: black;
+  font-size: 23px;
+  margin: 20px;
+}
+
+.seccion-cascos {
+  background-image: url(../img/imagenes-cascos/fondo-moto-5.jpg);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  column-gap: 10px;
+  gap: 20px;
+}
+.seccion-cascos .cascos-item {
+  width: 250px;
+  height: 400px;
+  margin: 20px;
+  text-align: center;
+}
+.seccion-cascos .cascos-item img {
+  width: 100%;
+  height: 250px;
+}
+.seccion-cascos .cascos-item h3 {
+  color: white;
+  font-size: 20px;
+}
+.seccion-cascos .cascos-item h4 {
+  position: top;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+.seccion-cascos .cascos-item a {
+  background-color: black;
+}
+
+.presentacion-camperas h2 {
+  background-color: red;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.presentacion-camperas p {
+  text-align: center;
+  color: black;
+  font-size: 23px;
+  margin: 20px;
+}
+
+.seccion-camperas {
+  background-image: url(../img/Imagenes-camperas/fondo-moto3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  column-gap: 10px;
+  gap: 20px;
+}
+.seccion-camperas .camperas-item {
+  width: 250px;
+  height: 400px;
+  margin: 20px;
+  text-align: center;
+}
+.seccion-camperas .camperas-item img {
+  width: 100%;
+  height: 250px;
+}
+.seccion-camperas .camperas-item h3 {
+  color: white;
+  font-size: 20px;
+}
+.seccion-camperas .camperas-item h4 {
+  position: top;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+.seccion-camperas .camperas-item a {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  padding: 5px 5px 5px 5px;
+}
+
+.contacto h2 {
+  text-align: center;
+}
+
+.container .form-container {
+  border: 1px solid #000;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+@media (max-width: 430px) {
+  header nav div a h1 {
+    font-size: 50px;
+    font-weight: 800;
+  }
+}
+@media (max-width: 837px) {
+  .hero2 {
+    justify-content: center;
+    align-items: center;
+  }
+  .hero2 div {
+    width: 100%;
+  }
+  .hero2 img {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .calesita div div div img {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 520px) and (max-width: 420px) {
+  .calesita div div div img {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 412px) {
+  footer {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1222px) {
+  .section-motos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .section-motos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 592px) {
+  .section-motos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+/**---cascos---*/
+@media (max-width: 903px) {
+  .seccion-cascos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 611px) {
+  .seccion-cascos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+/*---camperas---*/
+@media (max-width: 895px) {
+  .seccion-camperas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 599px) {
+  .seccion-camperas {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

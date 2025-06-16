@@ -1,0 +1,301 @@
+.hero{
+    text-align: center;
+    height: 670px;
+    background-image: url(../img/moto-8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    h2{       
+    color: $color-secundario;
+    font-size: 30px;
+    &::first-letter{
+            font: size 40px;
+            color:$color-terciario;
+        }
+}
+    p{
+    text-align: center;
+    color:$color-secundario;
+    font-size: 20px;
+    margin: 20px;
+    }
+
+}
+
+.hero2{
+    @include flex(flex, space-evenly, center);
+    margin: 15px;
+    div{
+        width: 35%;
+        h2{ 
+            font-size: 35px;
+            color:$color-principal;
+            text-align: center;
+            }
+        }
+        h3{
+            font-size: 20px;
+            color:$color-principal;
+            text-align: center;
+            &::selection{
+                background-color: rgb(170,40,40);
+                color:$color-secundario
+        }
+    }
+    img{
+        width: 600px;
+        height: 500px;
+    }
+}
+
+
+.novedades{
+    h2{
+        background-color: rgb(29, 27, 27);
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .novedades-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        div{
+            border: 2px solid black;
+            width: 260px;
+            height: 350px;
+            margin: 20px;
+            text-align: center;
+            &:nth-child(3){
+                border-color: red;
+            }
+            img{
+                width: 100%;
+                height: 80%;
+            }
+            p{
+                font-size: 15px;
+                color: black;
+                background-color: gray;
+                margin-bottom: 5px;
+            }
+            a{
+                background-color: black;
+                text-decoration: none;
+                color:white;
+                font-size: 15px;
+                padding: 5px 5px 5px 5px;  
+            }
+        }
+
+    }
+}
+.calesita {
+    width: 500px;
+    height: 500px;
+}
+
+.calesita {
+    display: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 80px;
+    right: 25px;
+
+    a {
+        img {
+            width: 60px;
+            height: 50px;
+        }
+    }
+}
+
+//**-----motos-------*/
+
+.ofrecemos{
+    h2{
+        background-color: nth($colores,3);
+        color:nth($colores, 2 );
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+
+.motos {
+    h3{
+        background-color:nth($colores, 2 );
+        color:nth($colores, 1 );
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+.section-motos {
+    background-image: url(../img/Imagenes-motos/Fondo-moto2.jpg);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    gap: 20px;
+    .motos-item{
+        width: 250px;
+        height: 400px;
+        margin: 20px;
+        text-align: center;
+                img{   
+                    width: 100%;
+                    height: 250px;
+                }
+                h3{
+                    color:white;
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+                h4{
+                    position: top;
+                    font-size: 15px;
+                    color: white;
+                    margin-bottom: 20px;
+                    margin-top: 0px;
+                }
+                a{ 
+                    background-color: rgb(15, 14, 14);
+                    @extend %boton;
+                }
+    }   
+}
+
+//**-----cascos-------*/
+.presentacion-cascos{
+        h2{
+            background-color: red;
+            color:white;
+            font-size: 30px;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            color: black;
+            font-size: 23px;
+            margin: 20px;
+        }
+}
+.seccion-cascos {
+    background-image:url(../img/imagenes-cascos/fondo-moto-5.jpg);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    column-gap: 10px;
+    gap: 20px;
+    .cascos-item{
+        width: 250px;
+        height: 400px;
+        margin: 20px;
+        text-align: center;
+        img{
+            width: 100%;
+            height: 250px;
+        }
+        h3{
+            color: white;
+            font-size: 20px;
+        }
+        h4{
+            position: top;
+            font-size: 15px;
+            color:white;
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+        a{
+            background-color:black;
+            @extend %boton;
+        }
+
+    }
+}
+
+
+
+//**-----camperas-------*/
+.presentacion-camperas{
+    h2{
+        background-color: red;
+        color: white;
+        font-size: 30px;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        color: black;
+        font-size: 23px;
+        margin: 20px;
+    }
+}
+.seccion-camperas{
+    background-image: url(../img/Imagenes-camperas/fondo-moto3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    column-gap: 10px;
+    gap: 20px;
+    .camperas-item{
+        width: 250px;
+        height: 400px;
+        margin: 20px;
+        text-align: center;
+        img{
+            width: 100%;
+            height: 250px;
+        }
+        h3{
+            color: white;
+            font-size: 20px;
+        }
+        h4{
+            position: top;
+            font-size: 15px;
+            color:white;
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+        a{
+            background-color:black;
+            text-decoration: none;
+            color:white;
+            font-size: 15px;
+            padding: 5px 5px 5px 5px;
+        }
+
+    }
+}
+
+//**-----contacto-------*/
+
+.contacto {
+    h2 {
+    text-align: center;
+}
+}
+.container {
+    .form-container {
+        border: 1px solid #000;
+        padding: 20px;
+        width: 50%;
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 5px;
+        background-color: #f8f9fa;
+}
+}

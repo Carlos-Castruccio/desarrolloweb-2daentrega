@@ -1,0 +1,23 @@
+//*?VARIABLES*//
+$color-principal: black;
+$color-secundario: white;
+$color-terciario: red;
+
+//*? LISTAS*/
+$colores:black, white, red, gray, gold, silver;
+
+//*? EXTENDS*/
+
+%boton {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    color: yellow;  
+}
+
+//*? MIXINS*/
+@mixin flex($flex, $justify, $align) {
+    display:$flex;
+    justify-content:$justify ;
+    align-items:$align;
+}
