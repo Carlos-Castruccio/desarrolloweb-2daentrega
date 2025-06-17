@@ -191,14 +191,14 @@ header .boton:hover {
   color: white;
   font-size: 30px;
   text-align: center;
-  animation-name: ingresoM;
-  animation-duration: 6s;
+  animation-name: ingresoMotos;
+  animation-duration: 7s;
   animation-timing-function: ease-in;
   animation-direction: initial;
   animation-iteration-count: 1;
-  animation-delay: 2s;
+  animation-delay: 3s;
 }
-@keyframes ingresoM {
+@keyframes ingresoMotos {
   from {
     transform: translateX(-100%);
     width: 300%;
@@ -304,7 +304,7 @@ header .boton:hover {
 @keyframes cuadrado {
   0% {
     border-radius: 100%;
-    background-color: blue;
+    background-color: rgb(52, 52, 94);
   }
   25% {
     border-radius: 75%;
