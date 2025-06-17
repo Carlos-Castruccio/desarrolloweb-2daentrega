@@ -1,14 +1,16 @@
 .hero{
     text-align: center;
     height: 670px;
-    background-image: url(../img/moto-8.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.151)), url(../img/moto-8.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: sans-serif;
+    font-style: italic;
     h2{       
     color: $color-secundario;
-    font-size: 30px;
+    font-size: 35px;
     &::first-letter{
             font: size 40px;
             color:$color-terciario;
@@ -17,7 +19,7 @@
     p{
     text-align: center;
     color:$color-secundario;
-    font-size: 20px;
+    font-size: 25px;
     margin: 20px;
     }
 
