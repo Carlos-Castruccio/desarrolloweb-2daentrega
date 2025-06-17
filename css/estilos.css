@@ -191,12 +191,22 @@ header .boton:hover {
   color: white;
   font-size: 30px;
   text-align: center;
-  animation-name: ingreso;
+  animation-name: ingresoM;
   animation-duration: 6s;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-in;
   animation-direction: initial;
   animation-iteration-count: 1;
-  animation-delay: 1s;
+  animation-delay: 2s;
+}
+@keyframes ingresoM {
+  from {
+    transform: translateX(-100%);
+    width: 300%;
+  }
+  to {
+    transform: translateX(0);
+    width: 100%;
+  }
 }
 
 .motos h3 {
