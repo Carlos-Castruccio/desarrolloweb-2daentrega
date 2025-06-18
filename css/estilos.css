@@ -70,6 +70,12 @@ header .boton:hover {
 .hero h2 {
   color: white;
   font-size: 35px;
+  animation-name: ingreso;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-direction: initial;
+  animation-iteration-count: 2;
+  animation-delay: 3s;
 }
 .hero h2::first-letter {
   font: size 40px;

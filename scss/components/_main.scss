@@ -11,9 +11,15 @@
     h2{       
     color: $color-secundario;
     font-size: 35px;
+    animation-name: ingreso;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-direction: initial;
+    animation-iteration-count: 2;
+    animation-delay: 3s;
     &::first-letter{
             font: size 40px;
-            color:$color-terciario;
+            color:$color-terciario;   
         }
 }
     p{
