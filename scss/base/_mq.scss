@@ -25,33 +25,10 @@
         }
     }
 }
-@media (max-width:520px) {
-    .calesita {
-        div{
-            div {
-                div{ 
-                    img {
-                        width: 350px;
-                        height: 350px;
-                }   } 
-        }    
-    }
-}
-@media (max-width:420px) {
-    .calesita {
-        div {
-            div {
-                div {
-                    img {
-                        width: 260px;
-                        height: 260px;
-                    }
-                }
-            }
-        }
-    }
-}
-
+@media (max-width: 692px) {
+  .calesita {
+    display: none;
+  }
 }
 @media (max-width:412px) {
     footer {

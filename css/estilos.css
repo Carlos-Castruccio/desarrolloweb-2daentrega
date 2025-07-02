@@ -160,15 +160,15 @@ header .boton:hover {
 }
 
 .calesita {
-  width: 500px;
-  height: 500px;
+  width: 700px;
+  height: 700px;
 }
 
 .calesita {
-  display: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .whatsapp {
@@ -252,11 +252,21 @@ header .boton:hover {
   background-color: rgb(15, 14, 14);
 }
 
+.super-contenedor {
+  background-image: url(../img/imagenes-cascos/fondo-moto-5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 20px;
+}
+
 .presentacion-cascos h2 {
-  background-color: red;
+  background-color: black;
   color: white;
   font-size: 30px;
   text-align: center;
+  margin-top: 500px;
   animation-name: ingreso;
   animation-duration: 6s;
   animation-timing-function: ease-in-out;
@@ -276,15 +286,12 @@ header .boton:hover {
 }
 .presentacion-cascos p {
   text-align: center;
-  color: black;
+  color: white;
   font-size: 23px;
   margin: 20px;
 }
 
 .seccion-cascos {
-  background-image: url(../img/imagenes-cascos/fondo-moto-5.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
@@ -437,16 +444,9 @@ header .boton:hover {
     display: none;
   }
 }
-@media (max-width: 520px) {
-  .calesita div div div img {
-    width: 350px;
-    height: 350px;
-  }
-}
-@media (max-width: 520px) and (max-width: 420px) {
-  .calesita div div div img {
-    width: 260px;
-    height: 260px;
+@media (max-width: 692px) {
+  .calesita {
+    display: none;
   }
 }
 @media (max-width: 412px) {
