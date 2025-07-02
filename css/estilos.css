@@ -59,7 +59,7 @@ header .boton:hover {
 .hero {
   text-align: center;
   height: 670px;
-  background: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.151)), url(../img/moto-8.jpg);
+  background: url(../img/moto-16.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,16 +70,6 @@ header .boton:hover {
 .hero h2 {
   color: white;
   font-size: 35px;
-  animation-name: ingreso;
-  animation-duration: 6s;
-  animation-timing-function: ease-in-out;
-  animation-direction: initial;
-  animation-iteration-count: 2;
-  animation-delay: 3s;
-}
-.hero h2::first-letter {
-  font: size 40px;
-  color: red;
 }
 .hero p {
   text-align: center;
@@ -146,9 +136,6 @@ header .boton:hover {
   height: 350px;
   margin: 20px;
   text-align: center;
-}
-.novedades .novedades-container div:nth-child(3) {
-  border-color: red;
 }
 .novedades .novedades-container div img {
   width: 100%;
@@ -225,7 +212,9 @@ header .boton:hover {
 }
 
 .section-motos {
-  background-image: url(../img/Imagenes-motos/Fondo-moto2.jpg);
+  background-color: rgb(39, 33, 32);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
@@ -233,6 +222,7 @@ header .boton:hover {
   gap: 20px;
 }
 .section-motos .motos-item {
+  border: 2px solid white;
   width: 250px;
   height: 400px;
   margin: 20px;
@@ -244,7 +234,7 @@ header .boton:hover {
   transition-duration: 2s;
 }
 .section-motos .motos-item img:hover {
-  transform: translateY(100px);
+  transform: scale(1.2);
 }
 .section-motos .motos-item h3 {
   color: white;
@@ -291,49 +281,10 @@ header .boton:hover {
   margin: 20px;
 }
 
-.contenedor-animacion {
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contenedor-animacion .animacion-cascos {
-  width: 90px;
-  height: 90px;
-  background-color: gray;
-  color: rgb(155, 51, 51);
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  animation: cuadrado 8s infinite;
-}
-@keyframes cuadrado {
-  0% {
-    border-radius: 100%;
-    background-color: rgb(52, 52, 94);
-  }
-  25% {
-    border-radius: 75%;
-    background-color: red;
-  }
-  50% {
-    border-radius: 50%;
-    background-color: skyblue;
-  }
-  75% {
-    border-radius: 25%;
-    background-color: salmon;
-  }
-  100% {
-    border-radius: 0%;
-    background-color: rgb(184, 184, 218);
-  }
-}
-
 .seccion-cascos {
   background-image: url(../img/imagenes-cascos/fondo-moto-5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
@@ -341,6 +292,7 @@ header .boton:hover {
   gap: 20px;
 }
 .seccion-cascos .cascos-item {
+  border: 2px solid white;
   width: 250px;
   height: 400px;
   margin: 20px;
@@ -389,42 +341,6 @@ header .boton:hover {
   margin: 20px;
 }
 
-.funciones {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-  height: 120px;
-  font-size: 15px;
-  color: blue;
-  gap: 30px;
-}
-.funciones .recuadro {
-  width: 110px;
-  height: 90px;
-  background-color: rgb(156, 155, 155);
-  transition: transform 2s;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.funciones .recuadro.linear {
-  transition-timing-function: linear;
-}
-.funciones .recuadro.ease {
-  transition-timing-function: ease;
-}
-.funciones .recuadro.ease-in {
-  transition-timing-function: ease-in;
-}
-.funciones .recuadro.ease-out {
-  transition-timing-function: ease-out;
-}
-.funciones .recuadro:hover {
-  transform: translateX(100px);
-}
-
 .seccion-camperas {
   background-image: url(../img/Imagenes-camperas/fondo-moto3.jpg);
   background-repeat: no-repeat;
@@ -436,6 +352,7 @@ header .boton:hover {
   gap: 20px;
 }
 .seccion-camperas .camperas-item {
+  border: 2px solid white;
   width: 250px;
   height: 400px;
   margin: 20px;
@@ -447,7 +364,7 @@ header .boton:hover {
   transition-duration: 2s;
 }
 .seccion-camperas .camperas-item img:hover {
-  transform: translateX(100px);
+  transform: scale(1.2);
 }
 .seccion-camperas .camperas-item h3 {
   color: white;
@@ -471,7 +388,12 @@ header .boton:hover {
   padding: 5px 5px 5px 5px;
 }
 
+.fondo-contactos {
+  background-color: rgb(55, 46, 44);
+}
+
 .contacto h2 {
+  color: white;
   text-align: center;
 }
 
@@ -482,26 +404,21 @@ header .boton:hover {
   margin: auto;
   margin-top: 50px;
   border-radius: 5px;
-  background-color: #f8f9fa;
+  background-color: #b2bac2;
 }
 
+/*
 .fondo-gradiente {
-  background: linear-gradient(90deg, skyblue, rgb(74, 74, 148));
-  background-size: 200% 200%;
-  animation: 4s gradient infinite;
+    background: linear-gradient(90deg, skyblue, rgb(74, 74, 148));
+    background-size: 200% 200%;
+    animation: 4s gradient infinite;
 }
 
 @keyframes gradient {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
-}
+    0% { background-position:  0 50%; }
+    50% { background-position: 100% 50%;}
+    100% { background-position: 0 50%;}
+}*/
 @media (max-width: 430px) {
   header nav div a h1 {
     font-size: 50px;

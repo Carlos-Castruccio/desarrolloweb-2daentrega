@@ -1,7 +1,7 @@
 .hero{
     text-align: center;
     height: 670px;
-    background: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.151)), url(../img/moto-8.jpg);
+    background: url(../img/moto-16.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,16 +11,6 @@
     h2{       
     color: $color-secundario;
     font-size: 35px;
-    animation-name: ingreso;
-    animation-duration: 6s;
-    animation-timing-function: ease-in-out;
-    animation-direction: initial;
-    animation-iteration-count: 2;
-    animation-delay: 3s;
-    &::first-letter{
-            font: size 40px;
-            color:$color-terciario;   
-        }
 }
     p{
     text-align: center;
@@ -91,9 +81,6 @@
             height: 350px;
             margin: 20px;
             text-align: center;
-            &:nth-child(3){
-                border-color: red;
-            }
             img{
                 width: 100%;
                 height: 80%;
@@ -183,13 +170,16 @@
 }
 
 .section-motos {
-    background-image: url(../img/Imagenes-motos/Fondo-moto2.jpg);
+    background-color: rgb(39,33,32); 
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     justify-content: space-evenly;
     gap: 20px;
     .motos-item{
+        border: 2px solid white;
         width: 250px;
         height: 400px;
         margin: 20px;
@@ -199,8 +189,8 @@
                     height: 250px;
                     transition-duration: 2s;
                     &:hover{
-                        transform: translateY(100px);
-                    }
+                transform: scale(1.2);
+            }
                 }
                 h3{
                     color:white;
@@ -253,45 +243,17 @@
         }
 }
 
-.contenedor-animacion {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .animacion-cascos{
-        width: 90px;
-        height: 90px;
-        background-color:gray;
-        color: rgb(155, 51, 51);
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 100%;
-        animation: cuadrado 8s infinite;    
-    }
-    @keyframes cuadrado {
-        0%{ border-radius: 100%;
-            background-color:rgb(52, 52, 94); }
-        25% {border-radius: 75%;
-            background-color:red}
-        50% {border-radius: 50%;
-            background-color:skyblue;}
-        75%{border-radius: 25%;
-            background-color: salmon ;}
-        100%{border-radius: 0%;
-            background-color:rgb(184, 184, 218)}
-    }
-}
-
 .seccion-cascos {
     background-image:url(../img/imagenes-cascos/fondo-moto-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     column-gap: 10px;
     gap: 20px;
     .cascos-item{
+        border: 2px solid white;
         width: 250px;
         height: 400px;
         margin: 20px;
@@ -348,33 +310,6 @@
     }
 }
 
-.funciones {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    height: 120px;
-    font-size: 15px;
-    color: blue;
-    gap: 30px;
-    .recuadro {
-            width: 110px;
-            height: 90px;
-            background-color: rgb(156, 155, 155);
-            transition: transform 2s;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-    &.linear {transition-timing-function: linear;}
-    &.ease {transition-timing-function: ease;}
-    &.ease-in{ transition-timing-function: ease-in;}
-    &.ease-out{transition-timing-function: ease-out;} 
-            &:hover {
-                transform: translateX(100px);
-            }
-        }
-}
 .seccion-camperas{
     background-image: url(../img/Imagenes-camperas/fondo-moto3.jpg);
     background-repeat: no-repeat;
@@ -385,6 +320,7 @@
     column-gap: 10px;
     gap: 20px;
     .camperas-item{
+        border: 2px solid white;
         width: 250px;
         height: 400px;
         margin: 20px;
@@ -394,7 +330,7 @@
             height: 250px;
             transition-duration: 2s;
             &:hover{
-                transform: translateX(100px);
+                transform: scale(1.2);
             }
         }
         h3{
@@ -425,10 +361,16 @@
 
 //**-----contacto-------*/
 
+.fondo-contactos {
+    background-color: rgb(55, 46, 44 );
+    
+}
+
 .contacto {
     h2 {
-    text-align: center;
-}
+        color: white;
+        text-align: center;
+        }
 }
 .container {
     .form-container {
@@ -438,10 +380,14 @@
         margin: auto;
         margin-top: 50px;
         border-radius: 5px;
-        background-color: #f8f9fa;
+        background-color: #b2bac2;
 }
 
 }
+
+
+
+/*
 .fondo-gradiente {
     background: linear-gradient(90deg, skyblue, rgb(74, 74, 148));
     background-size: 200% 200%;
@@ -452,4 +398,4 @@
     0% { background-position:  0 50%; }
     50% { background-position: 100% 50%;}
     100% { background-position: 0 50%;}
-}
+}*/
