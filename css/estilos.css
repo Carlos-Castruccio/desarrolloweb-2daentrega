@@ -222,6 +222,7 @@ header .boton:hover {
   gap: 20px;
 }
 .section-motos .motos-item {
+  background-color: white;
   border: 2px solid white;
   width: 250px;
   height: 400px;
@@ -237,14 +238,14 @@ header .boton:hover {
   transform: scale(1.2);
 }
 .section-motos .motos-item h3 {
-  color: white;
+  color: black;
   font-size: 20px;
   margin-bottom: 10px;
 }
 .section-motos .motos-item h4 {
   position: top;
   font-size: 15px;
-  color: white;
+  color: black;
   margin-bottom: 20px;
   margin-top: 0px;
 }
@@ -343,6 +344,7 @@ header .boton:hover {
   animation-delay: 1s;
 }
 .presentacion-camperas p {
+  background-color: rgb(44, 44, 65);
   text-align: center;
   color: white;
   font-size: 23px;
@@ -354,9 +356,9 @@ header .boton:hover {
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: auto;
   padding: 20px;
-  grid-template-areas: izquierda derecha;
 }
 
 .seccion-camperas {
@@ -367,6 +369,7 @@ header .boton:hover {
   gap: 20px;
 }
 .seccion-camperas .camperas-item {
+  background-color: rgb(75, 77, 76);
   border: 2px solid white;
   width: 250px;
   height: 400px;
@@ -415,7 +418,7 @@ header .boton:hover {
 .container .form-container {
   border: 1px solid #000;
   padding: 20px;
-  width: 50%;
+  width: 55%;
   margin: auto;
   margin-top: 50px;
   border-radius: 5px;
@@ -499,14 +502,32 @@ header .boton:hover {
   }
 }
 /*---camperas---*/
-@media (max-width: 895px) {
+@media (max-width: 1509px) {
   .seccion-camperas {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 599px) {
+@media (max-width: 911px) {
+  .presentacion-camperas h2 {
+    margin-top: 20px;
+  }
   .seccion-camperas {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 650px) {
+  .super-contenedor-camperas {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .container .form-container {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .container .form-container {
+    width: 80%;
   }
 }
 

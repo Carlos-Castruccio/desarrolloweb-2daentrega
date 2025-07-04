@@ -78,14 +78,41 @@
 }
 
 /*---camperas---*/
-@media (max-width:895px) {
+@media (max-width:1509px) {
     .seccion-camperas {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width:599px) {
+@media (max-width:911px) {
+    .presentacion-camperas{
+         h2 { 
+        margin-top: 20px;
+      }
+    }
     .seccion-camperas {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px){
+    .super-contenedor-camperas {
+        grid-template-columns: 1fr
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+    .form-container {
+        width: 70%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+    .form-container {
+        width: 80%;
+    }
     }
 }
